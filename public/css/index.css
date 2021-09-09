@@ -25,4 +25,25 @@
     border-top:1.5px solid gray;
 }
 
+.company-name{
+    font-family: 'Varela Round', sans-serif;"
+}
 
+
+@media (min-width: 1200px){
+    .company-name{
+        font-size: 110px;
+    }
+    .about-text{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1199.98px){
+    .company-name{
+        font-size: 50px;
+    }
+    .about-text{
+        font-size: 20px ;
+    }
+}
