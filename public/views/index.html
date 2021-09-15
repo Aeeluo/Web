@@ -114,7 +114,7 @@
     <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="../img/vikmorning2-2048px.jpg" class="img-fluid rounded-start" alt="Image1">
+                <img src="../img/vertical_1.jpg" class="img-fluid rounded-start" alt="Image1">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -131,7 +131,7 @@
     <div class="card mb-3 ms-auto" style="max-width: 540px;">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="../img/sunset3-2048px.jpg" class="img-fluid rounded-start" alt="Image2">
+                <img src="../img/vertical_2.jpg" class="img-fluid rounded-start" alt="Image2">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -147,7 +147,7 @@
     <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="../img/pano1-2048px.jpg" class="img-fluid rounded-start" alt="Image3">
+                <img src="../img/vertical_3.jpg" class="img-fluid rounded-start" alt="Image3">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -167,46 +167,92 @@
 
 
 <!----- GALERIE ----->
-
 <section class="gallery">
-
     <!------ IMAGES ----->
-    <div class="gallery-images">
+    <div class="container gallery-images">
+        <div class="row justify-content-center">
 
-        <div class="row w-100 justify-content-center">
-            <div class="col-lg-3 col-md-5 col-xs-6">
-
-                <div class="bg-image hover-overlay ripple shadow-1-strong rounded">
-                    <a href="#" class="d-block mb-4 h-100"> <img src="../img/AAD_0447.jpg" alt="Photo 1" class="rounded img-fluid img-gallery">
-                    </a>
-                </div>
-
+            <div class="col-lg-3 col-md-5 col-xs-6 mb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../img/wallpaper_1.jpg" id="gallery_image_1" class="img-fluid img-gallery rounded"
+                         alt="Photo 1">
+                </button>
             </div>
 
-            <div class="col-lg-3 col-md-5 col-xs-6">
-                <div class="bg-image hover-overlay ripple shadow-1-strong rounded">
-
-                    <img src="../img/AAD_0163.jpg" alt="Photo 2" class="rounded img-fluid img-gallery ">
-                </div>
+            <div class="col-lg-3 col-md-5 col-xs-6 mb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <img src="../img/wallpaper_2.jpg" id="gallery_image_2" class="img-fluid img-gallery rounded"
+                         alt="Photo 2">
+                </button>
             </div>
 
-            <div class="col-lg-3 col-md-5 col-xs-6">
-                <div class="bg-image hover-overlay ripple shadow-1-strong rounded">
-
-                    <img src="../img/AAD_0224.jpg" alt="Photo 3" class="rounded img-fluid img-gallery">
-                </div>
+            <div class="col-lg-3 col-md-5 col-xs-6 mb-3">
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                    <img src="../img/wallpaper_3.jpg" id="gallery_image_3" class="img-fluid img-gallery rounded"
+                         alt="Photo 3">
+                </button>
             </div>
 
         </div>
+    </div>
 
+    <div id="exampleModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../img/wallpaper_1.jpg" class="imagepreview" style="width: 100%;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="exampleModal2" class="modal fade" tabindex="-1" aria-labelledby="exampleModal2Label"
+         aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../img/wallpaper_2.jpg" class="imagepreview" style="width: 100%;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="exampleModal3" class="modal fade" tabindex="-1" aria-labelledby="exampleModal3Label"
+         aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../img/wallpaper_3.jpg" class="imagepreview" style="width: 100%;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
 </section>
 
+<!-- The Modal -->
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script><script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
         crossorigin="anonymous"></script>
 </body>
 </html>
