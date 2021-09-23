@@ -23,6 +23,17 @@
     height:1px;
     max-width:100%;
     border-top:1.5px solid gray;
+    opacity: 0.5;
+}
+
+.h-divider-card{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+
+    height:1px;
+    max-width:100%;
+    border-top:1.5px solid gray;
+    opacity: 0.5;
 }
 
 .company-name{
