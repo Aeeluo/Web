@@ -18,8 +18,6 @@
 
 
 .h-divider{
-    margin-top:3.5rem;
-    margin-bottom:3.5rem;
     height:1px;
     max-width:100%;
     border-top:1.5px solid gray;
@@ -38,6 +36,15 @@
 
 .company-name{
     font-family: 'Varela Round', sans-serif;"
+}
+
+/*.section{*/
+/*    background: linear-gradient(180deg, rgba(89, 89, 89, 0.95), rgba(255, 255, 255, 1)); !important;*/
+/*}*/
+
+
+.fa-2x{
+    font-size: 1.8rem; !important;
 }
 
 
