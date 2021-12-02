@@ -11,8 +11,33 @@
 /*    height: 800px;*/
 /*}*/
 
-.about-col-1{
+.carousel-inner, .carousel-item, .carousel-item.active{
+    height: 100%;
+}
 
+.bg-light{
+
+}
+
+/*
+#carouselMain.container-fluid{
+    padding-left: 0%;!important;
+    padding-right: 0%;!important;
+    margin-left: 0%;!important;
+    margin-right: 0%;!important;
+}
+*/
+
+.nav-link{
+    color:black;
+}
+
+.banner-image{
+    background-image: url("../img/Ferrari-F-40-expertech.png");
+    background-size: cover;
+}
+
+.about-col-1{
     font-size: 2rem;
 }
 
@@ -44,7 +69,9 @@
 
 
 .fa-2x{
-    font-size: 1.8rem; !important;
+    font-size: 1rem !important;
+    align-items: center !important;
+    margin-right: 0.8rem !important;
 }
 
 
@@ -65,7 +92,14 @@
         font-size: 20px ;
     }
 }
+a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 a:hover{
     opacity: 0.5;
 }
+
+
