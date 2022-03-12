@@ -1,106 +1,585 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-
-
-/*.carousel-inner > .carousel-item {*/
-/*    height: 800px;*/
-/*}*/
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-
-
-/*.carousel-inner > .carousel-item {*/
-/*    height: 800px;*/
-/*}*/
-
-.carousel-inner, .carousel-item, .carousel-item.active{
-    height: 100%;
-}
-
-.bg-light{
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 /*
-#carouselMain.container-fluid{
-    padding-left: 0%;!important;
-    padding-right: 0%;!important;
-    margin-left: 0%;!important;
-    margin-right: 0%;!important;
+*{
+color : #333333;
+color : #634F5F;
+color : #A46877;
+color : #E08976;
+color : #FFBA6A;
+color : #F9F871;
 }
 */
 
-.nav-link{
-    color:black;
+/*
+section, html{
+    background-color: #f6bd59;
+}
+*/
+
+html {
+    height: 100%;
+    background-color: #333333;
 }
 
-.banner-image{
-    background-image: url("../img/Ferrari-F-40-expertech.png");
+footer {
+    background-color: #333333;
+    border-top: 1px solid #545454;
+}
+
+.banner-height {
+    height: 101vh;
+}
+
+.company-name {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: Nunito, Serif;
+}
+
+.background-dark {
+    background-color: #202020;
+!important;
+}
+
+.nav-link {
+    color: black;
+}
+
+.banner {
+    background-color: #202020;
     background-size: cover;
+    -webkit-background-size: cover;
 }
 
-.about-col-1{
+.vh-50 {
+    height: 50vh;
+}
+
+.about-col-1 {
     font-size: 2rem;
 }
 
+#about-section {
+    padding-top: 5rem;
 
-.h-divider{
-    height:1px;
-    max-width:100%;
-    border-top:1.5px solid gray;
+}
+
+.h-divider {
+    height: 1px;
+    max-width: 100%;
+    border-top: 1.5px solid gray;
     opacity: 0.5;
 }
 
-.h-divider-card{
-    margin-top:0.5rem;
-    margin-bottom:0.5rem;
+.h-divider-card {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 
-    height:1px;
-    max-width:100%;
-    border-top:1.5px solid gray;
+    height: 1px;
+    max-width: 100%;
+    border-top: 1.5px solid gray;
     opacity: 0.5;
 }
 
-.company-name{
-    font-family: 'Varela Round', sans-serif;"
+.about-2 {
+    display: flex;
 }
 
-/*.section{*/
-/*    background: linear-gradient(180deg, rgba(89, 89, 89, 0.95), rgba(255, 255, 255, 1)); !important;*/
-/*}*/
+.img-responsive {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 574.98px) {
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 575px) {
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1800px) {
+    .modal-body {
+        align-self: center;
+    }
+
+    .img-responsive {
+        width: auto;
+        height: 100%;
+    }
+}
 
 
-.fa-2x{
+/*
+.section{
+    background: linear-gradient(180deg, rgba(89, 89, 89, 0.95), rgba(255, 255, 255, 1)); !important;
+}
+*/
+
+
+.fa-2x {
     font-size: 1rem !important;
     align-items: center !important;
     margin-right: 0.8rem !important;
 }
 
 
-@media (min-width: 1200px){
-    .company-name{
-        font-size: 110px;
+.about-title {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 574.98px) {
+    .company-name {
+        font-size: 15vw;
     }
-    .about-text{
-        font-size: 50px;
+
+    .company-description {
+        font-size: calc(0.5rem + 3vw);
+    }
+
+    .about-text {
+        padding: 0 0 2rem 0;
+        align-items: center;
+        border-left: transparent;
+    }
+
+    #about-text {
+        order: 2;
+        padding: 2rem 0 2rem 0;
+    }
+
+    #about-image {
+        order: 1;
+    }
+
+    #about-image-1 {
+        margin-bottom: 2rem;
+    }
+
+    .about-cards {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+
+    .contact-content {
+        padding: 0 0 2.5rem;
+    }
+
+}
+
+@media (min-width: 575px) {
+    .company-name {
+        font-size: 10vw;
+    }
+
+    .company-description {
+        font-size: calc(0.6rem + 2vw);
+    }
+
+    .about-text {
+        padding: 0 0 2rem 0;
+        align-items: center;
+        border-left: transparent;
+    }
+
+    .about-text-left {
+        padding: 2rem 0 2rem 0;
+        align-items: center;
+        border-left: transparent;
+    }
+
+    .about-paragraph {
+        font-size: calc(0.6rem + 1.5vw);
+    }
+
+    #about-text {
+        order: 2;
+
+    }
+
+    #about-image {
+        order: 1;
+    }
+
+    #about-image-1 {
+        margin-bottom: 2rem;
+    }
+
+    .about-cards {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+
+    .contact-content {
+        padding: 0 0 2.5rem;
+    }
+
+    h3 {
+        font-size: calc(1rem + 1.5vw) !important;
+    }
+
+    .card-text {
+        font-size: calc(0.8rem + 1vw)
+    }
+
+}
+
+@media (min-width: 768px) {
+    .company-name {
+        font-size: 10vw;
+    }
+
+    .company-description {
+        font-size: 3vw;
+    }
+
+    .about-text {
+        padding: 0 0 2rem 0;
+        align-items: center;
+        border-left: transparent;
+    }
+
+    .about-text-left {
+        align-items: center;
+        border-left: transparent;
+    }
+
+    .about-paragraph {
+        font-size: calc(0.6rem + 1.5vw);
+    }
+
+    #about-text {
+        order: 2;
+    }
+
+    #about-image {
+        order: 1;
+    }
+
+    #about-image-1 {
+        margin-bottom: 2rem;
+    }
+
+    .about-cards {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+    }
+
+
+}
+
+/*@media (max-width: 991.98px) {*/
+/*}*/
+
+@media (min-width: 992px) {
+    .company-name {
+        font-size: 7rem;
+    }
+
+    .company-description {
+        font-size: 1.5rem;
+    }
+
+
+    .about-title {
+        font-size: 1.9rem;
+    }
+
+    .about-paragraph {
+        font-size: 1rem;
+    }
+
+    #about-image-1 {
+        margin-bottom: 0rem;
+    }
+
+
+    .about-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #84bbbb;
+    }
+
+    .about-text-left {
+        font-size: 1.5rem;
+        border-right: 0.5rem solid #84bbbb;
+    }
+
+    #about-text {
+        padding: 0 2rem 0 0;
+        order: 2;
+    }
+
+    #about-image {
+        order: 2;
+    }
+
+    .about-cards {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .company-name {
+        font-size: 7rem;
+    }
+
+    .company-description {
+        font-size: 1.3rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-paragraph {
+        font-size: 1.1rem;
+    }
+
+    #about-image-1 {
+        margin-bottom: 0rem;
+    }
+
+    .about-text-left {
+        padding: 0 2rem 0 0;
+        font-size: 1.5rem;
+        border-right: 0.5rem solid #84bbbb;
+    }
+
+    #about-text {
+        order: 1;
+    }
+
+    #about-title-1 {
+        font-size: 2rem;
+    }
+
+    #about-image {
+        order: 2;
+    }
+
+    .about-cards {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+
+}
+
+
+@media (min-width: 1400px) {
+    .company-name {
+        font-size: 7rem;
+    }
+
+    .company-description {
+        font-size: 1.4rem;
+    }
+
+
+    .about-title {
+        font-size: 2.2vw;
+    }
+
+    .about-paragraph {
+        font-size: 1.1vw;
+    }
+
+    #about-image-1 {
+        margin-bottom: 0rem;
+    }
+
+    .about-text-left {
+        padding: 0 2rem 0 0;
+        font-size: 1.5rem;
+        border-right: 0.5rem solid #84bbbb;
+    }
+
+    #about-text {
+        padding: 0 0 0 2rem;
+        order: 1;
+    }
+
+    #about-title-1 {
+        font-size: 2rem;
+    }
+
+    #about-image {
+        order: 2;
+    }
+
+    .about-cards {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    #contact-section {
+        font-size: 2rem;
+    }
+
+    .gallery-images {
+        margin-right: 5rem;
+        margin-left: 5rem;
     }
 }
 
-@media (max-width: 1199.98px){
-    .company-name{
-        font-size: 50px;
+@media (min-width: 1800px) {
+    .about-cards {
+        margin-right: 15rem;
+        margin-left: 15rem;
     }
-    .about-text{
-        font-size: 20px ;
+
+    .gallery-images {
+        margin-right: 15rem;
+        margin-left: 15rem;
+    }
+
+    .about-title {
+        font-size: 2.2vw;
+    }
+
+    .about-paragraph {
+        font-size: 1.1vw;
     }
 }
 
-a{
-    color: black;
+
+a {
+    color: #ffffff;
     background-color: transparent;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     opacity: 0.5;
+    color: #030303;
 }
 
+.contact-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    background: #333333;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    font-family: "Lato", sans-serif;
+}
 
+.contact-upper-part{
+    padding-right: 5vw;
+    padding-left: 5vw;
+    width: 100%;
+}
+
+.contact-left-side{
+    padding-right: 3vw;
+=}
+
+.form-input{
+    width: 100%;
+    padding: 16px;
+    font-family: "Lato Light", sans-serif;
+    font-size: 1.3rem;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-input:focus{
+    outline: none !important;
+    border: 1px solid #e08976;
+    box-shadow: none;
+}
+
+form{
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+}
+
+#contact-form-title{
+    letter-spacing: 3px;
+    font-family: Roboto, sans-serif;
+}
+
+/*
+#input-name, #input-email{
+    margin-bottom: 25px;
+}
+*/
+
+
+#input-message{
+    height: 100%;
+}
+
+.input-button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #FFBA6A;
+}
+
+.input-button:hover{
+    background-color: #ffba6aab;
+}
+
+.input-button:focus{
+    outline: none !important;
+    border: 1px solid #e08976;
+}
+
+.modal-header {
+    border-bottom: 0px;
+!important;
+}
