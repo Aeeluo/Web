@@ -46,6 +46,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="/climatisation">Climatisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/expertise">Expertise</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#about-section">Info</a>
                 </li>
                 <li class="nav-item">
@@ -74,13 +80,13 @@
 </div>
 
 <div class="about-cards section" id="about-section">
-    <div class="full-container px-4 px-lg-5">
+    <div class="full-container scroll-container px-4 px-lg-5">
         <div class="row g-0 align-items-center mb-3 mb-lg-5">
-            <div class="col-lg-7 about-image">
+            <div class="col-lg-7 about-image js-scroll slide-left">
                 <img src="../img/Ferrari-F-40-expertech.png" class="img-fluid" id="about-image-1"
                      alt="Image1">
             </div>
-            <div class="col-lg-5 about-text">
+            <div class="col-lg-5 about-text js-scroll slide-left-text">
                 <div class="text-center">
                     <h1 class="about-title">Technologie de pointe</h1>
                     <p class="about-paragraph mb-0">ExpertTech est à la pointe de la technologie,
@@ -92,14 +98,14 @@
 
         <div class="row g-0 align-items-center about-2">
             <div class="col-lg-5 about-text-left" id="about-text">
-                <div class="text-center">
+                <div class="text-center js-scroll slide-right-text">
                     <h1 class="about-title">Titre</h1>
                     <p class="about-paragraph mb-0"> Deuxième explication ou description de ton choix.</p>
                 </div>
             </div>
             <div class="col-lg-7 about-image" id="about-image">
                 <img src="../img/pexels-erik-mclean-4732635.jpg"
-                     class="img-fluid" alt="Image1" style="height: 50%">
+                     class="img-fluid js-scroll slide-right" alt="Image1" style="height: 50%">
             </div>
         </div>
 
@@ -131,6 +137,8 @@
 
 <!----- GALERIE ----->
 <div class="gallery section" id="gallery-section">
+
+    <h1 class="about-title text-center text-uppercase pt-4">Galerie</h1>
     <!------ IMAGES ----->
     <div class="full-container p-5 gallery-images">
         <div class="row justify-content-center">
@@ -312,6 +320,7 @@
                                   data-validation-required-message="Entrez votre message."></textarea>
                     </div>
                 </div>
+                <p class="text-danger pt-3 fs-6 text-align-left">* Champ obligatoire</p>
                 <div class="row g-0">
                     <div class="col-lg-12 pt-5 text-center">
                         <input type="submit" value="Envoyer" class="input-button">
@@ -329,6 +338,7 @@
     </div>
 </footer>
 
+<script src="../js/index.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+section:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+    clear: both;
+}
+
+.white-back{
+    background: #ffffff;
+}
+
+.about-wrapper{
+    display: flex;
+    padding: 20rem 0 20rem 0 ;
+    width: 100%;
+}
+
+.inner-container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+    display: block;
+    align-items: stretch;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.about-tile, .about-paragraph{
+    z-index: 4;
+}
+
+img{
+    display: block;
+    width: 806.4px;
+    height: 392px;
+    border: 0;
+}
+
+.fade-img{
+    position: absolute;
+    display: inline-block;
+    width: 750px;
+    top:50%; left:50%;
+    margin-left: -403.2px;
+    margin-top: -196px;
+    transform: translateX(40%);
+    z-index: 2;
+
+}
+
+.fade-img:after{
+    content: '';
+    position: absolute;
+    left:0; top:0;
+    width: 100%; height: 101%;
+    display: inline-block;
+    background: linear-gradient(66deg,#fff 20%,hsla(0,0%,100%,0) 45%);
+    margin-top: 0;
+    z-index: 3;
+}
+
+
