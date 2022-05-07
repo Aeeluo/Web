@@ -4,7 +4,6 @@ const cons = require('consolidate');
 
 
 module.exports = function() {
-
     const app = express();
 
     app.engine('html', cons.mustache);
