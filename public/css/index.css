@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Montserrat", sans-serif;
 }
 
-p{
+p, li{
     font-family: "Exo 2", sans-serif;
 }
 
@@ -51,6 +51,17 @@ a:hover {
     color: #030303;
 }
 
+ul{
+    list-style: none;
+}
+
+.clim-list::before{
+    content: "\2022";
+    color: #333333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
 
 /*********** NAVBAR ***********/
 
@@ -689,13 +700,76 @@ a:hover {
 }
 
 .row-custom{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+
     display: flex;
     flex-wrap: wrap;
+
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
 }
 
-.col-custom{
-    flex: 1 0 0%;
-    padding: 0 8% 0 8%;
+.row-custom>*{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+@media(max-width: 768px){
+    .row-custom{
+        --bs-gutter-x: 0;
+    }
+    .custom-container{
+        max-width: 100vw;
+        width: 100vw;
+    }
+    .col-custom{
+        flex: 0 0 auto;
+        margin: 5px 0 5px 0;
+    }
+    .clim-summary{
+        margin: 0 0 0 0;
+    }
+    .chassis-summary{
+        margin: 20px 0 0 0;
+    }
+    .custom-container{
+        width: 100%;
+    }
+    .services-section{
+        padding: 20px 0 0 0;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(220,84,53,1) 2%);
+    }
+    /*.services-description{*/
+    /*    margin-left: 10px;*/
+    /*    margin-right: 10px;*/
+    /*}*/
+    .services-slide-clim, .services-slide-chassis{
+        background: white;
+        padding: 10px 20px 10px 20px;
+    }
+}
+@media(min-width: 768px){
+    .col-custom{
+        flex: 1 0 0%;
+    }
+    .clim-summary{
+        margin: 0 10px 0 0;
+    }
+    .chassis-summary{
+        margin: 0 0 0 10px;
+    }
+
+    .services-section{
+        margin-bottom: 20px;
+        padding: 50px 0 50px 0;
+        background-color: #dc5435;
+    }
 }
 
 .services-description {
@@ -715,8 +789,14 @@ SVG Icons - svgicons.sparkk.fr
 
 .svg-icon path,
 .svg-icon polygon,
-.svg-icon rect {
+.svg-icon rect{
     fill: #ffffff;
+}
+
+.svg-icon-black {
+    width: 4em;
+    height: 4em;
+    fill: #333333;
 }
 
 .svg-icon circle {
@@ -727,10 +807,6 @@ SVG Icons - svgicons.sparkk.fr
 SVG Icons - svgicons.sparkk.fr
 ----- */
 
-.services-section{
-    margin-bottom: 20px;
-    padding: 50px 0 50px 0;
-}
 
 .inner-wrapper{
     display: flex;
@@ -759,4 +835,71 @@ button{
 .text-align-center{
     text-align: center;
 }
+
+.services-slide-chassis>.custom-container>.cadre>.row-custom>.col-custom{
+    padding: 0 1.5% 0 1.5%;
+}
+
+.cadre{
+    border: 1px solid black;
+    padding: 1%;
+}
+
+.shown-chassis{
+    max-height: fit-content;
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+}
+.hidden-chassis{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+
+.shown-clim{
+    max-height: fit-content;
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+}
+.hidden-clim{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+}
+
+.grid{
+    display: grid;
+}
+
+.align-self-end{
+    align-self: end;
+}
+
+.mx-20{
+    margin: 0 20% 0 20%;
+}
+
+.pb-20{
+    padding-bottom: 20px;
+}
+
+.img-icon{
+    width: 4em;
+    height: 4em;
+}
+
+.bottom-clim-text{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/*
+.clim-summary{
+    margin-right: 10px;
+}
+
+.chassis-summary{
+    margin-left: 10px;
+}*/
 

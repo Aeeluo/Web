@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
-    <!-- Icônes Font Awesome (version gratuite)-->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -20,8 +16,10 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <title>Document</title>
+
+    <title>Prout</title>
 </head>
 
 <body>
@@ -30,13 +28,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark background-dark">
     <div class="container-fluid" id="navbar">
         <a class="navbar-brand" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house"
-                 viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                      d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                <path fill-rule="evenodd"
-                      d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-            </svg>
             ExpertTech</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -83,91 +74,165 @@
 
 <!--- SERVICES ---->
 
-<div class="services-section" style="background-color: #dc5435">
+<div class="services-section">
     <div class="custom-container">
         <div class="row-custom">
-            <div class="col-custom text-align-center">
+            <div class="col-custom grid text-align-center clim-summary">
                 <div class="inner-wrapper">
                     <svg class="svg-icon" viewBox="0 0 20 20">
                         <path fill="none"
                               d="M2.568,7.179H8.96c1.411,0,2.557-1.145,2.557-2.557c0-1.412-1.146-2.557-2.557-2.557H8.534c-0.235,0-0.426,0.19-0.426,0.426c0,0.236,0.191,0.426,0.426,0.426H8.96c0.941,0,1.704,0.763,1.704,1.705S9.901,6.327,8.96,6.327H2.568c-0.236,0-0.426,0.19-0.426,0.426C2.142,6.988,2.333,7.179,2.568,7.179 M15.778,7.179c0-0.941-0.763-1.704-1.704-1.704h-0.427c-0.235,0-0.426,0.19-0.426,0.426c0,0.235,0.19,0.426,0.426,0.426h0.427c0.47,0,0.852,0.382,0.852,0.852c0,0.471-0.382,0.853-0.852,0.853H0.864c-0.236,0-0.426,0.19-0.426,0.426c0,0.235,0.19,0.426,0.426,0.426h13.21C15.016,8.884,15.778,8.12,15.778,7.179 M16.631,9.736H2.568c-0.236,0-0.426,0.19-0.426,0.426c0,0.236,0.19,0.426,0.426,0.426h14.062c0.94,0,1.704,0.764,1.704,1.705s-0.764,1.704-1.704,1.704h-0.427c-0.235,0-0.426,0.19-0.426,0.427c0,0.235,0.19,0.426,0.426,0.426h0.427c1.411,0,2.557-1.145,2.557-2.557S18.042,9.736,16.631,9.736 M10.665,11.44H4.273c-0.236,0-0.426,0.19-0.426,0.426c0,0.236,0.19,0.427,0.426,0.427h6.392c1.412,0,2.557,1.145,2.557,2.557s-1.146,2.557-2.557,2.557h-0.426c-0.236,0-0.426,0.19-0.426,0.426s0.19,0.427,0.426,0.427h0.426c1.883,0,3.41-1.526,3.41-3.409S12.548,11.44,10.665,11.44"></path>
                     </svg>
-                    <h1>Climatisation</h1>
+                    <h1 class="services-section-title">Climatisation</h1>
                 </div>
                 <p class="services-description">Entretien, recharge en fluide frigorigène ou recherche d'une fuite ?<br>
                     Nous répondrons à tous vos besoins grâce à notre matériel Hit-tech.</p>
-                <button>PLUS D'INFORMATIONS</button>
+                <button class="align-self-end mx-20" id="show-clim">PLUS D'INFORMATIONS</button>
             </div>
 
-            <div class="col-custom text-align-center">
+            <div class="col-custom grid  text-align-center chassis-summary">
                 <div class="inner-wrapper">
                     <svg class="svg-icon" viewBox="0 0 20 20">
                         <path fill="none"
                               d="M18.737,9.691h-5.462c-0.279,0-0.527,0.174-0.619,0.437l-1.444,4.104L8.984,3.195c-0.059-0.29-0.307-0.506-0.603-0.523C8.09,2.657,7.814,2.838,7.721,3.12L5.568,9.668H1.244c-0.36,0-0.655,0.291-0.655,0.655c0,0.36,0.294,0.655,0.655,0.655h4.8c0.281,0,0.532-0.182,0.621-0.45l1.526-4.645l2.207,10.938c0.059,0.289,0.304,0.502,0.595,0.524c0.016,0,0.031,0,0.046,0c0.276,0,0.524-0.174,0.619-0.437L13.738,11h4.999c0.363,0,0.655-0.294,0.655-0.655C19.392,9.982,19.1,9.691,18.737,9.691z"></path>
                     </svg>
-                    <h1>Chassimétrie</h1>
+                    <h1 class="services-section-title">Chassimétrie</h1>
                 </div>
-                <p class="services-description">Procurez-vous un contrôle du chassis pour valoriser vos rapports de conformité VE/VEI.</p>
-                <button>PLUS D'INFORMATIONS</button>
+                <p class="services-description">Procurez-vous un contrôle du chassis pour valoriser vos rapports de
+                    conformité VE/VEI.</p>
+                <button class="align-self-end mx-20" id="show-chassis">PLUS D'INFORMATIONS</button>
             </div>
         </div>
     </div>
 </div>
-<div class="services-slide-clim">
+<div class="services-slide-clim" id="services-clim">
     <div class="custom-container">
         <div class="row-custom">
             <div class="col-custom">
                 <p class="catch-phrase">
-                    Notre matériel Hi-Tech permet une rapidité d'intervention inégalée, sur tout type de véhicules, allant des
+                    Notre matériel Hi-Tech permet une rapidité d'intervention inégalée, sur tout type de véhicules,
+                    allant des
                     plus anciens aux plus récents. <br>
-                    Nos stations de climatisation sont 100% autonomes, gérant automatiquement toutes les opérations sur la
+                    Nos stations de climatisation sont 100% autonomes, gérant automatiquement toutes les opérations sur
+                    la
                     boucle A/C :
                 </p>
                 <ul>
-                    <li>
-                        la récupération du gaz.
+                    <li class="clim-list">
+                        <b>la récupération du gaz.</b>
                     </li>
-                    <li>
-                        le recyclage (nettoyage du fluide frigorigène)
+                    <li class="clim-list">
+                        <b>le recyclage (nettoyage du fluide frigorigène)</b>
                     </li>
-                    <li>
-                        le tirage au vide
+                    <li class="clim-list">
+                        <b>le tirage au vide</b>
                     </li>
-                    <li>
-                        l'injection du fluide frigorigène et de l'huile par pesée
+                    <li class="clim-list">
+                        <b>l'injection du fluide frigorigène et de l'huile par pesée</b>
                     </li>
-                </ul>
-                <p>Chez ExpertTech, la diversité est notre priorité. C'est pour cela que
-                    nous proposons 2 gaz différents afin de convenir à tous les types de véhicules et s’adapter à vos besoins :</p>
-                <ul>
-                    <li>R134a</li>
-                    <li>R1234yf</li>
                 </ul>
             </div>
             <div class="col-custom">
-                <p>Chez ExpertTech, nous vous délivrons une attestation de transfert de quantité.</p>
+                <p>Chez ExpertTech, la diversité est notre priorité. C'est pour cela que
+                    nous proposons 2 gaz différents afin de convenir à tous les types de véhicules et nous adapter à vos
+                    besoins :</p>
+                <ul>
+                    <li class="clim-list"><b>Gaz R134a</b></li>
+                    <li class="clim-list"><b>Gaz R1234yf</b></li>
+                </ul>
             </div>
             <div class="col-custom">
                 <p>Nous possédons également tout le matériel nécessaire à la recherche de fuite sur la boucle A/C. <br>
-                Nous utilisons du matériel de pointe pour vous assurer une efficacité rapide et infaillible.
+                    Nous utilisons du matériel de pointe pour vous assurer une efficacité rapide et infaillible :
                 </p>
                 <ul>
-                    <li>par détecteur électronique et d'azote hydrogéné.</li>
-                    <li>par traceur fluorescent.</li>
+                    <li class="clim-list"><b>par détecteur électronique et d'azote hydrogéné.</b></li>
+                    <li class="clim-list"><b>par traceur fluorescent.</b></li>
                 </ul>
+                <p>Ces deux méthodes d'identification nous permettent de trouver une fuite efficacement dans les plus
+                    brefs délais. </p>
             </div>
-            <p>Ces deux méthodes d'identification nous permettent de trouver une fuite avec une efficacité remarquable et dans un délai </p>
+        </div>
+        <div class="bottom-clim-text">
+            <img class="img-responsive img-icon" src="../img/certificate.png" height="512" width="512" alt="Certificate Icon"/>
+            <p>Chez ExpertTech, nous vous délivrons une attestation de transfert de quantité.</p>
         </div>
     </div>
 </div>
 
+<div class="services-slide-chassis pb-20" id="services-chassis">
+    <div class="custom-container">
+        <p class="catch-phrase">Dans le cadre de votre obligation de moyen,
+            nous pouvons assurer la mesure du soubassement de tous types
+            de véhicules sur site.
+        </p>
+        <div class="cadre">
+            <p>Plusieurs choix s'offrent à vous :</p>
+            <div class="row-custom">
+                <div class="col-custom">
+                    <p>
+                        <b>Avant travaux :</b> <br>Utile pour les chocs importants qui selon
+                        leur gravité déterminera la réparabilité économique du
+                        véhicule en toute transparence.
+                    </p>
+                </div>
+                <div class="col-custom">
+                    <p>
+                        <b>Pendant travaux :</b> <br>Supervision de la qualité des mesures
+                        et remises en ligne des longerons.
+                    </p>
+                </div>
+                <div class="col-custom">
+                    <p>
+                        <b>Après travaux :</b> <br>Validation de la réparation. A l'issue du contrôle,
+                        nous vous transmettons le relevé de mesure détaillé accompagné de nos
+                        conclusions techniques.
+                    </p>
+                </div>
+                <div class="col-custom">
+                    <p>
+                        <b>Ponctuellement :</b> <br>Dans le cadre de conflit, procédure judiciaire,
+                        expertise de véhicule de collection, valeur de véhicule...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--
+Attestation de transfert de quantité fournie
+
+Valorisez vos rapports de conformité VE/VEI en vous procurant un contrôle du chassis.
+Dans le cadre de votre obligation de moyen, nous pouvons assurer
+la mesure du soubassement de tous types de véhicules sur site.
+
+Plusieurs choix s'offrent à vous :
+
+Avant travaux : Utile pour les chocs importants qui selon leur gravité déterminera
+la réparabilité économique du véhicule en toute transparence.
+
+Pendant travaux : Supervision de la qualité des mesures et remises en
+ligne des longerons.
+
+Après travaux : Validation de la réparation. A l'issue du contrôle,
+nous vous transmettons le relevé de mesure détaillé accompagné de nos
+conclusions techniques.
+
+Ponctuellement : Dans le cadre de conflit, procédure judiciaire,
+expertise de véhicule de collection, valeur de véhicule...
+-->
+
 
 <!----- DIVIDER ----->
+<!--
 <div>
     <div class="container divider">
         <div class="h-divider"></div>
     </div>
 </div>
+-->
 
 <!----- GALERIE ----->
 <div class="gallery section" id="gallery-section">
@@ -178,21 +243,21 @@
 
             <div class="col-lg col-md col-xs mb-3">
                 <a href="#" class="image-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="../img/wallpaper_1.jpg" id="gallery_image_1" class="img-fluid img-gallery rounded"
+                    <img src="../img/wallpaper_1.jpg" id="gallery_image_1" class="img-fluid img-gallery"
                          alt="Photo 1">
                 </a>
             </div>
 
             <div class="col-lg col-md col-xs mb-3">
                 <a href="#" class="image-btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                    <img src="../img/wallpaper_2.jpg" id="gallery_image_2" class="img-fluid img-gallery rounded"
+                    <img src="../img/wallpaper_2.jpg" id="gallery_image_2" class="img-fluid img-gallery"
                          alt="Photo 2">
                 </a>
             </div>
 
             <div class="col-lg col-md col-xs mb-3">
                 <a href="#" class="image-btn" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                    <img src="../img/wallpaper_3.jpg" id="gallery_image_3" class="img-fluid img-gallery rounded"
+                    <img src="../img/wallpaper_3.jpg" id="gallery_image_3" class="img-fluid img-gallery"
                          alt="Photo 3">
                 </a>
             </div>
@@ -202,21 +267,21 @@
 
             <div class="col-lg col-md col-xs mb-3">
                 <a href="#" class="image-btn" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                    <img src="../img/wallpaper_4.jpg" id="gallery_image_4" class="img-fluid img-gallery rounded"
+                    <img src="../img/wallpaper_4.jpg" id="gallery_image_4" class="img-fluid img-gallery"
                          alt="Photo 4">
                 </a>
             </div>
 
             <div class="col-lg col-md col-xs mb-3">
                 <a href="#" class="image-btn" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                    <img src="../img/wallpaper-5.jpg" id="gallery_image_5" class="img-fluid img-gallery rounded"
+                    <img src="../img/wallpaper-5.jpg" id="gallery_image_5" class="img-fluid img-gallery"
                          alt="Photo 5">
                 </a>
             </div>
 
             <div class="col-lg col-md col-xs mb-3">
                 <a href="#" class="image-btn" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                    <img src="../img/wallpaper-6.jpg" id="gallery_image_6" class="img-fluid img-gallery rounded"
+                    <img src="../img/wallpaper-6.jpg" id="gallery_image_6" class="img-fluid img-gallery"
                          alt="Photo 6">
                 </a>
             </div>
@@ -339,6 +404,7 @@
 <footer class="full-container">
     <div class="text-white small text-center">
         <p class="p-3">Copyright © ExpertTech 2022</p>
+        <a href="https://www.flaticon.com/free-icons/certificate" title="certificate icons">Certificate icons created by Freepik - Flaticon</a>
     </div>
 </footer>
 
