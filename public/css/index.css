@@ -329,19 +329,6 @@ SERVICES
     }
 }
 
-.bottom-clim-text {
-    text-align: center;
-    justify-content: center;
-    width: fit-content;
-    border: black 1px solid;
-    margin: 10px auto auto auto;
-    padding: 10px;
-}
-
-.bottom-clim-text > p {
-    margin: 0;
-}
-
 .services-slide-chassis > .custom-container > .cadre > .row-custom > .col-custom {
     padding: 0 1.5% 0 1.5%;
 }
